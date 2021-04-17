@@ -80,12 +80,17 @@
             font-size: 1.3rem;
             padding: 1.5rem 0 1.5rem 0;
         }
+        @media screen and (max-width: 800px){
+                .container{
+                    margin-top: 5.5rem;
+                }
+            }
     </style>
 
 </head>
 
 <body>
-    <nav class="navbar-personal navbar navbar-expand-lg navbar-dark mb-4" style="background-color: #003399;">
+    <nav class="navbar-personal navbar navbar-expand-lg navbar-dark" style="background-color: #003399;">
         <a class="navbar-brand text-white text-center" href="#">MESUGA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,8 +116,15 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8">
+                <div class="card d-block d-sm-none">
+                    <h3 class="card-header text-center">Mesuga, Reymond R.</h3>
+                    <div class="card-body">
+                        <img src="img/reymond2.jpg"
+                            class="profile img-fluid rounded-circle mb-4 mt-4 w-100">
+                    </div>
+                </div>
                 <div class="card mb-4" id="about">
-                    <img src="img/library.jpg" alt="Picture of Reymond at the Library" class="w-100">
+                    <img src="img/citynights.jpg" alt="Picture of Reymond at the Library" class="w-100">
                     <div class="card-body mt-4">
                         <p class="card-text lead">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
