@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+
 
     <style type="text/css">
         body {
@@ -47,13 +50,15 @@
 
         .navbar {
             position: fixed;
+            /* background-color: #003399; */
             width: 100%;
             left: 0;
             top: 0;
             z-index: 100;
             border-top: 0;
-            background-image: url(./img/bluegalaxy-min\ \(1\).jpg);
-            background-size: cover
+            /* background-image: url(./img/bluegalaxy-min\ \(1\).jpg); */
+            background-size: cover;
+            background: rgba(255, 255, 255, 0.85);
 
         }
 
@@ -64,6 +69,8 @@
         .card {
             background-color: #E8E8E8;
             border: solid 2px #C0C0C0;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 400;
 
         }
 
@@ -81,6 +88,8 @@
         .nav-link {
             font-size: 1.3rem;
             padding: 1rem 0 1rem 0;
+            color: blue;
+            font-family: 'Roboto Mono', monospace;
         }
         
         @media screen and (max-width: 800px){
@@ -89,8 +98,10 @@
                 }
             }
         @media screen and (max-width: 500px){
-            .nav-item{
-            border: solid 0.1rem #C0C0C0;
+            .nav-link{
+                font-size: 2rem;
+                font-weight: bold;
+                color: rgb(11, 62, 230);
         }
         }
     </style>
@@ -98,8 +109,8 @@
 </head>
 
 <body>
-    <nav class="navbar-personal navbar navbar-expand-lg navbar-dark" style="background-color: #003399;">
-        <a class="navbar-brand text-white text-center" href="#">MESUGA</a>
+    <nav class="navbar-personal navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand text-primary text-center" href="#">MESUGA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -107,16 +118,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white text-center" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link  text-center" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white text-center" href="#about">About</a>
+                    <a class="nav-link  text-center" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white text-center" href="#contact">Contact</a>
+                    <a class="nav-link text-center" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white text-center" href="#education">Education</a>
+                    <a class="nav-link text-center" href="#education">Education</a>
                 </li>
             </ul>
         </div>
@@ -135,8 +146,9 @@
                     <img src="img/citynights.jpg" alt="Picture of Reymond at the Library" class="w-100">
                     <div class="card-body mt-4">
                         <p class="card-text lead">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus orci massa, maximus a velit sit amet, fringilla convallis tellus.
+                            Hello there, i'm Reymond. I'm a physics student who happened to be a passionate programmer. 
+                            In my spare time, i enjoy doing some front end web/software development and some artificial 
+                            artificial intelligence project.
                         </p>
                         <p class="card-text">
                             Morbi auctor consectetur convallis. Suspendisse at lobortis libero.
