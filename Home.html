@@ -26,31 +26,60 @@
 
 
     <style type="text/css">
-        body {
-            background-color: #E8E8E8;
-
+    /* HEADER STYLE STARTS HERE */
+        header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
         }
 
-        .carousel-indicators {
-            bottom: 0;
-        }
-
-        .carousel-indicators li {
-            background-color: #868e96;
-            cursor: pointer;
-        }
-
-        .carousel-indicators .active {
-            background-color: #007bff;
-        }
-
-        .profile {
-            display: block;
-            max-width: 58%;
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
             height: auto;
-            margin-left: auto;
-            margin-right: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
         }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+            header video {
+                display: none;
+            }
+        }
+
+        /* HEADER STYLE ENDS HERE */
+
+
 
         .navbar {
             position: fixed;
@@ -63,28 +92,6 @@
             /* background-image: url(./img/bluegalaxy-min\ \(1\).jpg); */
             background-size: cover;
             background: rgba(255, 255, 255, 0.85);
-
-        }
-
-        .container {
-            margin-top: 8rem;
-        }
-
-        .card {
-            background-color: #E8E8E8;
-            border: solid 2px #C0C0C0;
-            font-weight: 400;
-
-        }
-
-        .card-header {
-            background-color: #003399bd;
-            color: #E8E8E8;
-            font-family: 'Roboto Mono', monospace;
-        }
-
-        .card-body {
-            font-family: 'Roboto', sans-serif;
         }
 
         .navbar-brand {
@@ -101,9 +108,7 @@
             font-family: 'Roboto Mono', monospace;
         }
 
-        .skill-title {
-            font-family: 'Roboto Mono', monospace;
-        }
+
 
         @media screen and (max-width: 800px) {
             .container {
@@ -149,6 +154,20 @@
             </ul>
         </div>
     </nav>
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="Video/Pexels Videos 3867.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">Video Header</h1>
+                    <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
     <!-- jQuery first, then Bootstrap JS -->
