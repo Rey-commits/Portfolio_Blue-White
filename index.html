@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
     <script defer src="js/fontawesome-all.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
@@ -81,6 +83,7 @@
             color: #E8E8E8;
             font-family: 'Roboto Mono', monospace;
         }
+
         .card-body {
             font-family: 'Roboto', sans-serif;
         }
@@ -97,18 +100,22 @@
             color: blue;
             font-family: 'Roboto Mono', monospace;
         }
-        
-        @media screen and (max-width: 800px){
-                .container{
-                    margin-top: 5.5rem;
-                }
+        .skill-title{
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                margin-top: 5.5rem;
             }
-        @media screen and (max-width: 500px){
-            .nav-link{
+        }
+
+        @media screen and (max-width: 500px) {
+            .nav-link {
                 font-size: 2rem;
                 font-weight: bold;
                 color: rgb(11, 62, 230);
-        }
+            }
         }
     </style>
 
@@ -135,6 +142,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-center" href="#education">Education</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#skills">Skills</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -144,16 +154,15 @@
                 <div class="card mb-4 d-block d-sm-none">
                     <h3 class="card-header text-center">Mesuga, Reymond Robin</h3>
                     <div class="card-body">
-                        <img src="img/reymond2.jpg"
-                            class="profile img-fluid rounded-circle mb-4 mt-4 w-100">
+                        <img src="img/reymond2.jpg" class="profile img-fluid rounded-circle mb-4 mt-4 w-100">
                     </div>
                 </div>
                 <div class="card mb-4" id="about">
                     <img src="img/citynights.jpg" alt="Picture of Reymond at the Library" class="w-100">
                     <div class="card-body mt-4">
                         <p class="card-text lead">
-                            Hello there, i'm Reymond. I'm a physics student who happened to be a passionate programmer. 
-                            In my spare time, i enjoy doing some front end web/software development and some artificial 
+                            Hello there, i'm Reymond. I'm a physics student who happened to be a passionate programmer.
+                            In my spare time, i enjoy doing some front end web/software development and some artificial
                             artificial intelligence project.
                         </p>
                         <p class="card-text">
@@ -285,7 +294,7 @@
                 <!-- EDUCATION -->
 
                 <div class="card mb-4" id="education">
-                    <h2 class="card-header text-center">EDUCATION</h2>
+                    <h2 class="card-header text-center">Education</h2>
                     <div class="card-body">
                         <div class="media mb-2">
                             <i class="fas fa-university fa-fw fa-3x text-primary mr-2"></i>
@@ -572,9 +581,109 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- SKILLS -->
+
+                <div class="card mb-4" id="skills">
+                    <h2 class="card-header text-center">Skills</h2>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <h3 class="h5 mb-3 text-center skill-title">Web Develomnet</h3>
+                            <h4 class="h6 text-muted text-center">HTML5</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 95%;" role="progressbar"
+                                    aria-valuenow="95" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">CSS3</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 78%;" role="progressbar"
+                                    aria-valuenow="78" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">Sass</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 75%;" role="progressbar"
+                                    aria-valuenow="75" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">Less</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 80%;" role="progressbar"
+                                    aria-valuenow="80" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">Bootstrap</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 85%;" role="progressbar"
+                                    aria-valuenow="85" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">JavaScript</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 80%;" role="progressbar"
+                                    aria-valuenow="80" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">React JS</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 85%;" role="progressbar"
+                                    aria-valuenow="85" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">NPM</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 85%;" role="progressbar"
+                                    aria-valuenow="85" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">Git Commands</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 85%;" role="progressbar"
+                                    aria-valuenow="85" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">GitHub</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 85%;" role="progressbar"
+                                    aria-valuenow="85" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">Firebase</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 85%;" role="progressbar"
+                                    aria-valuenow="85" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <h3 class="h5 mb-3 text-center skill-title">Data Science and Artificial Intelligence</h3>
+                            <h4 class="h6 text-muted text-center">Python</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 95%;" role="progressbar"
+                                    aria-valuenow="95" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">Matplotlib & Seaborn</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 78%;" role="progressbar"
+                                    aria-valuenow="78" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">Pandas</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 75%;" role="progressbar"
+                                    aria-valuenow="75" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">PyTorch</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 80%;" role="progressbar"
+                                    aria-valuenow="80" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">MatLab</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 80%;" role="progressbar"
+                                    aria-valuenow="80" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="h6 text-muted text-center">GNU Octave</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-secondary" style="width: 80%;" role="progressbar"
+                                    aria-valuenow="80" aria-value="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
+
+    </div>
     </div>
 
 
